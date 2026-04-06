@@ -23,7 +23,7 @@ import java.time.LocalDateTime;
         @Index(name = "sku", columnList = "sku")
         }
 )
-public class Product {
+public class ProductEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
