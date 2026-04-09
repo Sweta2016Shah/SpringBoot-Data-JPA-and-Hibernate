@@ -1,10 +1,7 @@
 package com.example.jpa.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -14,6 +11,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Getter
 @Setter
+@Builder
 public class Appointment {
 
     @Id
@@ -26,7 +24,7 @@ public class Appointment {
     @Column(nullable = false, length = 100)
     private String reason;
 
-    @ManyToOne //Owing side
+    @ManyToOne//Owing side
     @JoinColumn(nullable = false)
     private Patient patient;
 

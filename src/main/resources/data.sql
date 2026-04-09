@@ -11,6 +11,12 @@ VALUES
 ('Rohit Roy', 'Male', '1991-09-05', 'rohit.roy@gmail.com', 'A_NEGATIVE'),
 ('Kavita Nair', 'Female', '1996-04-17', 'kavita.nair@gmail.com', 'O_NEGATIVE');
 
+INSERT INTO doctor(name, specialization,email)
+VALUES
+('Dr. Smith', 'Cardiologist', 'smith@example.com'),
+('Dr. John', 'Dermatologist', 'john@example.com'),
+('Dr. Emily', 'Neurologist', 'emily@example.com');
+
 --INSERT INTO jpa_tutorial.product_table (price,quantity,sku,title_x)
 --VALUES
 --(12.4,4,'parle7341','parle Biscuit'),
