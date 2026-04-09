@@ -45,6 +45,11 @@ public class PatientServiceTest {
     public void testPatient(){
 //        int rowsAffected = patientRepository.updatePatientNameWithId("Anuj Sharma", 1L);
 //        System.out.println(rowsAffected);
-        patientService.testPatientTransaction();
+//        patientService.testPatientTransaction();
+//        List<Patient> patientList = patientRepository.findAll(); //causing n+1 query problem
+        List<Patient> patientList = patientRepository.getAllPatientWithAppointment();
+        for(var p: patientList){
+            System.out.println(p);
+        }
     }
 }

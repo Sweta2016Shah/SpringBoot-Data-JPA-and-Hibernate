@@ -30,7 +30,9 @@ class InsuranceTest {
                .build();
        var updatedInsurance = insuranceService.assignInsuranceToPatient(insurance,1L);
        System.out.println(updatedInsurance);
-       patientService.deletePatient(1L);
+//       patientService.deletePatient(1L);
+        var patient = insuranceService.removeInsuranceToPatient(1L);
+        System.out.println(patient);
     }
 
     @Test
